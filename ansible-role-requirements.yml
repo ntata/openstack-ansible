@@ -50,49 +50,9 @@
   scm: git
   src: https://git.openstack.org/openstack/openstack-ansible-openstack_openrc
   version: master
-- name: os_aodh
-  scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_aodh
-  version: master
-- name: os_ceilometer
-  scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_ceilometer
-  version: master
-- name: os_cinder
-  scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_cinder
-  version: master
-- name: os_glance
-  scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_glance
-  version: master
-- name: os_heat
-  scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_heat
-  version: master
-- name: os_horizon
-  scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_horizon
-  version: master
-- name: os_ironic
-  scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_ironic
-  version: master
-- name: os_neutron
-  scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_neutron
-  version: master
-- name: os_nova
-  scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_nova
-  version: master
 - name: os_swift
   scm: git
   src: https://git.openstack.org/openstack/openstack-ansible-os_swift
-  version: master
-- name: os_tempest
-  scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_tempest
   version: master
 - name: plugins
   scm: git

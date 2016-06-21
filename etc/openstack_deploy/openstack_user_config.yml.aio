@@ -75,7 +75,7 @@ shared-infra_hosts:
     # Rabbitmq, and galera are set to multiples to test clustering.
     affinity:
       galera_container: 1
-      rabbit_mq_container: 1
+      rabbit_mq_container: 0
     ip: 172.29.236.100
 
 os-infra_hosts:

@@ -32,34 +32,16 @@
     config_overrides: "{{ item.override }}"
     config_type: "yaml"
   with_items:
-    - name: aodh.yml
-      override: "{{ aodh_env_overrides | default({}) }}"
-    - name: ceilometer.yml
-      override: "{{ ceilometer_env_overrides | default({}) }}"
-    - name: cinder.yml
-      override: "{{ cinder_env_overrides | default({}) }}"
     - name: galera.yml
       override: "{{ galera_env_overrides | default({}) }}"
-    - name: glance.yml
-      override: "{{ glance_env_overrides | default({}) }}"
     - name: haproxy.yml
       override: "{{ haproxy_env_overrides | default({}) }}"
-    - name: heat.yml
-      override: "{{ heat_env_overrides | default({}) }}"
-    - name: horizon.yml
-      override: "{{ horizon_env_overrides | default({}) }}"
     - name: infra.yml
       override: "{{ infra_env_overrides | default({}) }}"
-    - name: ironic.yml
-      override: "{{ ironic_env_overrides | default({}) }}"
     - name: keystone.yml
       override: "{{ keystone_env_overrides | default({}) }}"
     - name: memcache.yml
       override: "{{ memcache_env_overrides | default({}) }}"
-    - name: neutron.yml
-      override: "{{ neutron_env_overrides | default({}) }}"
-    - name: nova.yml
-      override: "{{ nova_env_overrides | default({}) }}"
     - name: os-infra.yml
       override: "{{ os_infra_env_overrides | default({}) }}"
     - name: pkg_repo.yml
@@ -86,10 +68,6 @@
     config_overrides: "{{ item.override }}"
     config_type: "yaml"
   with_items:
-    - name: aodh.yml.aio
-      override: "{{ aodh_conf_overrides | default({}) }}"
-    - name: ceilometer.yml.aio
-      override: "{{ ceilometer_conf_overrides | default({}) }}"
     - name: swift.yml.aio
       override: "{{ swift_conf_overrides | default({}) }}"
   tags:
